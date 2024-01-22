@@ -46,7 +46,7 @@ const mockData=[
             },
             {
                 id:uuidv4(),
-                title:"Cursado" html y css"
+                title:"Cursado html y css"
             },
             {
                 id:uuidv4(),
