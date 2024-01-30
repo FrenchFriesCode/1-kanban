@@ -2,6 +2,8 @@ import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import mockData from "../../mockData";
 import { Card } from "../card/Card";
 import { useState } from "react";
+import "./kanban.scss"
+
 export function Kanban() {
   const [data, setData] = useState(mockData);
   const onDragEnd = (result) => {
@@ -29,7 +31,7 @@ export function Kanban() {
   };
   return (
     <DragDropContext onDragEnd={onDragEnd}>
-      <div>
+      <div className="kanban">
         {data.map((section) => (
           <Droppable key={section.id} droppableId={section.id}>
             {(provided) => (
